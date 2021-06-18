@@ -1,0 +1,83 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+
+    <h1>Jouer</h1>
+    <p>Le but du jeu est de trouver un nombre.</p>
+    <p>Pour cela on va cvous demander une valeur maximale et un nombre sera choisit entre 0 et cette valeur max</p>
+    <p>ensuite vous ferez des propositions et le jeu vous indiquera si celles-ci sont au dessus ou au dessous du nombre à trouver</p>
+    <p>Bon jeu!</p>
+    
+    <button onclick="numberGame()">Start game</button>
+    <hr>
+    <div>
+        <form action="#">
+            <label for="somme">Somme à convertir</label>
+            <input type="text" name="montant" id="somme">
+            <p>selectionnez la devise initiale</p>
+            <div class="test">
+            <input type="radio" id="euros" name="monnaie" value="e" checked="">
+            <label for="euros">€</label>
+            </div>
+            <div>
+            <input type="radio" id="dollars" name="monnaie" value="d">
+            <label for="dollars">$</label>
+            </div>
+            <button onclick="conversion(montant.value, monnaie.value)">Convertir</button>
+        </form>
+    </div>
+    <hr>
+    <div id="gestion-contacts">
+        <form action="" method="GET" id="addcontact">
+            <label for="lastname">Nom
+                <input type="text" name="lastname" id="lastname">
+            </label>
+            <br><br>
+            <label for="firstname">Prénom
+                <input type="text" name="firstname" id="firstname">
+            </label>
+            <br><br>
+            <label for="email">adresse mail
+                <input type="text" name="email" id="email">
+            </label>
+            <br><br>
+            <input type="submit" value="enregistrer">
+        </form>
+        <div id="listContacts">
+            <p>Liste de vos contacts</p>
+        </div>
+    </div>
+
+    <hr>
+    <div id="magicImage">
+        <img src="mangas.jpg" alt="image des personnages de mangas" style="opacity: 0.99;">
+        <button type="submit">Disparition</button>
+    </div>
+    <hr>
+    <div id="lightBox">
+
+        <a href=""><img src="plage1.jpg" alt="" class="img1"></a>
+        <a href=""><img src="plage2.jpg" alt="" class="img2"></a>
+        <a href=""><img src="plage3.jpg" alt="" class="img3"></a>
+        <a href=""><img src="plage4.jpg" alt="" class="img4"></a>
+        <a href=""><img src="plage5.jpg" alt="" class="img5"></a>
+        <div id="overlay" style="display: none;">
+            <img src="plage1.jpg" alt="" class="img1" style="display: none;">
+            <img src="plage2.jpg" alt="" class="img2" style="display: none;">
+            <img src="plage3.jpg" alt="" class="img3" style="display: none;">
+            <img src="plage4.jpg" alt="" class="img4" style="display: none;">
+            <img src="plage5.jpg" alt="" class="img5" style="display: none;">
+        </div>
+    </div>
+    <script src="FindNumber.js"></script>
+    <script src="convert.js"></script>
+    <script src="gestionContacts.js"></script>
+    <script src="magicImage.js"></script>
+    <script src="lightbox.js"></script>
+</body>
