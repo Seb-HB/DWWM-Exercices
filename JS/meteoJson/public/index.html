@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="meteocity">
+        <!-- <div>
+            <form action="" method="GET" id="meteoparam">
+                <label for="CP">Code postal
+                    <input type="text" name="cp" id="CP">
+                </label>
+                <label for="cityname">ville
+                    <input type="text" name="cityname" id="cityname">
+                </label>
+                <button type="submit">Météo</button>
+            </form>
+        </div> -->
+        <div>
+            <h1>Votre météo à 5 jours</h1>
+            <p>selectionnez votre ville en cliquant sur la map</p>
+        </div>
+        <div id="meteomap">
+
+        </div>
+
+    </section>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="meteo.js"></script>
+</body>
+</html>
