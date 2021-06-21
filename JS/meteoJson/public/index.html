@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin=""/>
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -25,10 +25,20 @@
         </div> -->
         <div>
             <h1>Votre météo à 5 jours</h1>
-            <p>selectionnez votre ville en cliquant sur la map</p>
         </div>
-        <div id="meteomap">
+        <div id="yourMeteo">
+            <div id="meteoPlan">
+                <p>selectionnez votre ville en cliquant sur la map</p>
+                <div id="meteomap"></div>
+            </div>
+            <div id="meteoRender">
 
+                <div class="meteoJ j1"></div>
+                <div class="meteoJ j2"></div>
+                <div class="meteoJ j3"></div>
+                <div class="meteoJ j4"></div>
+                <div class="meteoJ j5"></div>
+            </div>
         </div>
 
     </section>
