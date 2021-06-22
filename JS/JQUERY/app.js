@@ -23,13 +23,32 @@ $(function(){
             }
         });
     });
+
+    $('img').click(function() {
+        $(this).fadeOut();
+    });
+    $('#toto')
+        .append('<p> paragraphe fantôme</p>')
+        .append('<button>avec du texte</button>');
+    $('button').click(function(){
+        $('p').toggle();
+    })
+
+    $.ajax({
+        headers: { 'X-Auth-Token': 'c359acb55b194557aa4b27e323822d10' },
+        url: 'https://api.football-data.org/v2//competitions/FL1/standing',
+        dataType: 'json',
+        type: 'GET',
+      }).done(function(response) {
+        console.log(response);
+        let results=response.standings[0].table;
+        console.log(results);
+        $(results).each(function(i, value){
+            let texte=`<p>position N° `+ (i+1) +' : ' + value.team.name+'</p>';
+            console.log(texte);
+            $('#toto').append(texte);
+        })
+      }).fail(function(xhr, status, error){
+        console.log(status);
+      });
 });
-
-// - Créer une image dans votre html. Au clic sur cette image, faire un fadeOut afin qu’elle disparaisse (la méthode fadeOut existe en Jquery)
-
-// - Créer une div avec un id. 
-// - En jQuery, insérer un paragraphe dans cette div
-// - Puis insérer, un bouton après cette div, lui mettre du texte
-// - Au clic
-// -  sur le bouton, faire un toggle qui supprime ou affiche le paragraphe à l’intérieur de la div 
-// - La methode toggle() existe en jQuery
