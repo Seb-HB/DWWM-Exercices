@@ -1,0 +1,10 @@
+<!-- <p color={{couleur}}>{{compteur}}</p> -->
+<!-- <p [style.color]="flag ? colorA : colorB"></p> -->
+<!-- <p [style.color]={{couleur}}>{{compteur}}</p> -->
+<p [style.color]="couleur? 'green' : 'red'">{{compteur}}</p>
+
+
+<button (click)="incrementCompteur(1)">+</button>
+<button (click)="incrementCompteur(5)">++</button>
+<button (click)="decreaseCompteur(1)">-</button>
+<button (click)="decreaseCompteur(5)">--</button>

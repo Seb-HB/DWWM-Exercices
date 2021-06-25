@@ -14,8 +14,7 @@ export class ExoIfComponent implements OnInit {
   }
 
   changeMyString(newString: string){
-    
-    "J'aime les fruits au sirop"
+    this.myString=newString;
   }
 
 }

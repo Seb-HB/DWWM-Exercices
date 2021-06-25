@@ -1,1 +1,8 @@
 <p>array-plus-moin works!</p>
+
+<p *ngFor="let arrayItem of myArray">
+    {{arrayItem}}
+</p>
+
+<button (click)="addArrayElement('Bonjour Monsieur !')">+</button>
+<button (click)="removeArrayLastElement()">-</button>

@@ -10,6 +10,7 @@ import { TimerPlusComponent } from './timer-plus/timer-plus.component';
 import { TimerMinusComponent } from './timer-minus/timer-minus.component';
 import { RouteParamComponent } from './route-param/route-param.component';
 import { ArrayPlusMoinComponent } from './array-plus-moin/array-plus-moin.component';
+import { CompteurComponent } from './compteur/compteur.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ArrayPlusMoinComponent } from './array-plus-moin/array-plus-moin.compon
     TimerPlusComponent,
     TimerMinusComponent,
     RouteParamComponent,
-    ArrayPlusMoinComponent
+    ArrayPlusMoinComponent,
+    CompteurComponent
   ],
   imports: [
     BrowserModule,

@@ -14,4 +14,11 @@ export class ArrayPlusMoinComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addArrayElement(element: string): void {
+      this.myArray.push(element);
+  }
+  removeArrayLastElement(): void {
+    this.myArray.pop()
+  }
+
 }
