@@ -1,0 +1,9 @@
+<p>exo-if début</p>
+
+<p *ngIf="myString==='variable string'">
+    {{myString}}
+</p>
+
+<input type="text"  #addInput>
+
+<button (click)="changeMyString(addInput.value)" >Change my string</button>

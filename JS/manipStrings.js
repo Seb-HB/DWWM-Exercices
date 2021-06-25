@@ -12,6 +12,9 @@ stringDiv.appendChild(posit);
 alert(mystring.substring(0,mystring.indexOf('?')+1));
 alert(mystring.substring(mystring.indexOf('?')+1));
 
+const getGoodSentence=function(chaine){
+    
+}
 
 
 // - Avec les regex, chercher  dans la chaine « Il est où le soleil ? le sol a froid ! » , 
