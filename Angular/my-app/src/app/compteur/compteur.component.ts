@@ -10,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class CompteurComponent implements OnInit {
   compteur:number = 0;
   couleur:boolean =true;
+  tata:number =2;
+  // selectP=document.querySelector('p') as HTMLElement;  //as HTMLElement est indispensable pour Angular pour qu'il sache qu'il a un element HTML
 
   constructor() { }
 
@@ -18,12 +20,12 @@ export class CompteurComponent implements OnInit {
 
   incrementCompteur(increment:number): void {
     this.compteur += increment;
-    // (this.compteur<0)? document.querySelector('p').style.color='red': document.querySelector('p').style.color='green';
+    // (this.compteur<0)? selectP.style.color='red':selectP.style.color='green';
     this.defineColor();
   }
   decreaseCompteur(increment:number): void {
     this.compteur -= increment;
-    // (this.compteur<0)? document.querySelector('p').style.color='red': document.querySelector('p').style.color='green';
+    // (this.compteur<0)? selectP.style.color='red': selectP.style.color='green';
     this.defineColor();    
   }
 

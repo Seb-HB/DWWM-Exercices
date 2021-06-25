@@ -1,3 +1,5 @@
-// @if {{couleur}} {
-    
-// }
+@if couleur {
+    p{
+        color:blue;
+    }
+}
