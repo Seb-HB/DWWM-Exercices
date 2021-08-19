@@ -1,0 +1,12 @@
+.lignearticle{
+    display: flex;
+    justify-content: space-evenly;
+    width:60%;
+    margin:auto;
+    border: 1px solid green;
+}
+
+img{
+    height:50px;
+    width: auto;
+}
