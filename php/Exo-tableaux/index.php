@@ -46,6 +46,8 @@
         $tri=triMails($adressesMail);
         affichageStatsMails($tri[0], $tri[1]);
 
+        phpinfo();
+
     ?>
     
 </body>

@@ -8,9 +8,12 @@
 </head>
 <body>
     <?php
+        include 'classes/article.php';
+        include 'classes/category.php';
+        include 'classes/user.php';
         $user = new User('seb','sébastien','fouvet','toto');
         $article = new Article('bouée',2, 25.99, 'canard.jpg');
-        echo($article->getClassName);
+        echo($article->getClassName());
 
         var_dump($article);
 
